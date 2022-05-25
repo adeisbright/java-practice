@@ -24,6 +24,7 @@ public class Person {
 
     // How do you handle null or undfine in java , how do you pass in n arguments
     public String greetPerson(boolean say){
+        
         if (say == true){
             return "Hello " + this.name ; 
         }

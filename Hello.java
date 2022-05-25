@@ -1,12 +1,22 @@
-
+import bigjara.string.Lesson;;
 
 class Hello {
+    public void printNames(String ...names){
+        for(String name : names){
+
+            System.out.println(name) ;
+        }
+    }
+
     public void sayHello(){
         System.out.println("Hello, Jonathan");
     }
     public static void main(String args[]){
         //To print anything to the standard output 
         System.out.println("Hello, What is happening ? ") ; 
+
+        Lesson s = new Lesson() ; 
+        s.sayHello();
         //Operators and variables  
         String name = "Adeleke" ; 
         int age = 28 ; 
@@ -20,6 +30,7 @@ class Hello {
         Hello obj = new Hello() ; 
 
         obj.sayHello();
+        obj.printNames("Adele" , "Bright");
 
         Person person = new Person(30 , "Ben" , 3000) ; 
         System.out.println(person.describe()) ; 
@@ -32,6 +43,8 @@ class Hello {
                 System.out.println("FizzBuzz");
             }else if ( i%5 == 0){
                 System.out.println("Fizz");
+                //You can use break to exist 
+                // Continue to return to the top of the loop and skips below
             }else if (i%3 == 0){
                 System.out.println("Buzz");
             }else {
@@ -73,10 +86,22 @@ class Hello {
             System.out.println("The count is "  + wStart); 
             wStart++ ;
         }
+
+        int sample[] = new int[10];
+        sample[0] = 3;
+        String fruits[][] = {{"First Apple" , "Mango"} , {"Pawpaw","BitterLeaf"}} ; 
+        
         /**
          * for (type name : collection){
          *  //program 
          * }
          */
+
+        //var studenAge = 45 ; //Local variable using an infer type
+
+        ErrorTest err = new ErrorTest() ; 
+
+        err.divide(3, 1);
+       
     }
 }

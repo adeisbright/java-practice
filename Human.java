@@ -1,8 +1,8 @@
 public abstract class Human {
-    static final int LIFESPAN = 120 ; 
+    static  final int LIFESPAN = 120 ; 
     private String name ; 
     private int age ; 
-    private float height ; 
+    private double height ; 
     private GenderEnum gender ;
 
     /**
@@ -17,7 +17,7 @@ public abstract class Human {
         this.gender = gender ; 
     }
 
-    Human(String name ,  int age , float height , GenderEnum gender){
+    Human(String name ,  int age , double height , GenderEnum gender) {
         this.name = name ; 
         this.age = age ;
         this.height = height ; 
@@ -36,7 +36,7 @@ public abstract class Human {
         return this.name ; 
     }
 
-    public float getHeight(){
+    public double getHeight(){
         return this.height ; 
     }
     public abstract int getTimeToLive();
